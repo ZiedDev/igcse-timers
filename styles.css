@@ -72,15 +72,16 @@ body {
 }
 
 h2 {
-    font-size: 18pt;
+    font-size: 45pt;
 }
 
-h3 {
-    font-size: 15pt;
+h3,
+a {
+    font-size: 30pt;
 }
 
 .page-container {
-    padding: 0 10%;
+    padding: 0 20%;
     height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,7 +145,6 @@ h3 {
 }
 
 a {
-    font-size: 15pt;
     font-family: "Work Sans Thin";
     text-align: center;
     text-decoration: none;
@@ -174,7 +174,20 @@ a:hover::after {
 }
 
 @media only screen and (max-width: 425px) {
+    h2 {
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-size: 15pt;
+    }
+
+    a {
+        font-size: 15pt;
+    }
+
     .page-container {
+        padding: 0 10%;
         grid-template-columns: 1fr;
         text-align: center;
     }
