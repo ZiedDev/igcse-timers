@@ -80,7 +80,8 @@
 }
 
 html,
-body, *{
+body,
+* {
    margin: 0;
    padding: 0;
 }
@@ -175,70 +176,6 @@ a {
 .results-link {
    font-size: 45pt;
    font-weight: bold;
-}
-
-.love-content {
-   grid-column: 2 span;
-   font-size: 30pt;
-   margin-bottom: 3rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 0.5rem;
-   position: relative;
-}
-
-.show-love-confirm {
-   word-break:normal;
-   position: absolute;
-   font-size: 20pt;
-   width: 5rem;
-   top: 10%;
-   right: 21%;
-   user-select: none;
-   z-index: -1;
-
-   opacity: 0;
-
-   transform-origin: center;
-}
-
-.confirm-like-slide-in-class {
-   animation: confirm-like-slide-in 2000ms ease-in-out forwards;
-}
-
-@keyframes confirm-like-slide-in {
-   0% {
-      transform: translateX(20%);
-      opacity: 0;
-   }
-   30% {
-      transform: translateX(100%);
-      opacity: 1;
-   }
-
-   80% {
-      transform: translateX(100%);
-      opacity: 1;
-   }
-
-   100% {
-      transform: translateX(20%);
-      opacity: 0;
-   }
-}
-
-.love-icon {
-   cursor: pointer;
-   transition: transform 100ms ease-in-out;
-}
-
-.love-icon:hover {
-   transform: scale(120%);
-}
-
-.love-icon:active {
-   transform: scale(80%);
 }
 
 a {

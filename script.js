@@ -1,10 +1,3 @@
-const countDownTimer = document.getElementById("count-down-timer");
-const resultsLink = '<a class="results-link" target="_blank" href="https://myresults.cie.org.uk/">this page</a>';
-
-const heartIcon = document.querySelector(".love-icon-internal");
-
-const showLoveConfirm = document.querySelector(".show-love-confirm");
-
 // Set the date we're counting down to
 let countDownDate = new Date(1692162000000).getTime();
 
@@ -38,39 +31,3 @@ let updateCountDown = setInterval(function () {
         countDownTimer.innerHTML = `Results should be live. Visit ${resultsLink} to view them`;
     }
 }, 1000);
-
-let iLovedIt;
-
-if (document.cookie.includes("iLovedIt=true")) {
-    iLovedIt = true;
-    heartIcon.style.fill = '#ffffff';
-} else {
-    iLovedIt = false;
-    heartIcon.style.fill = '#none';
-}
-
-function sendHeart() {
-    if (!iLovedIt) {
-        heartIcon.style.fill = '#ffffff';
-        loveSentMessageIn();
-        setTimeout(loveSentMessageOut, 2000);
-        document.cookie = "iLovedIt=true";
-        iLovedIt = true;
-
-    } else {
-        heartIcon.style.fill = "none";
-        loveSentMessageOut();
-        document.cookie = "iLovedIt=false";
-        iLovedIt = false;
-    }
-}
-
-function loveSentMessageIn() {
-    showLoveConfirm.classList.add("confirm-like-slide-in-class");
-}
-function loveSentMessageOut() {
-    showLoveConfirm.classList.remove("confirm-like-slide-in-class");
-}
-
-// ----------------------------------
-
