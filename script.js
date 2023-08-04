@@ -1,3 +1,7 @@
+const countDownTimer = document.getElementById("count-down-timer");
+const resultsLink = '<a class="results-link" target="_blank" href="https://myresults.cie.org.uk/">this page</a>';
+
+
 // Set the date we're counting down to
 let countDownDate = new Date(1692162000000).getTime();
 
