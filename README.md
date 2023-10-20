@@ -1,4 +1,4 @@
-# june-ol-date
+# igcse-timers
 
 This is a website I made Because I was bored and wanted to make something small but useful
 
