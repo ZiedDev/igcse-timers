@@ -3,7 +3,7 @@ const resultsLink = '<a class="results-link" target="_blank" href="https://myres
 
 
 // Set the date we're counting down to
-let countDownDate = new Date(1692162000000).getTime();
+let countDownDate = new Date(1704866400000).getTime();
 
 // Update the count down every 1 second
 let updateCountDown = setInterval(function () {

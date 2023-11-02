@@ -228,6 +228,7 @@ a:hover::after {
    .page-container {
       padding: 0 10%;
       grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
       text-align: center;
    }
 
